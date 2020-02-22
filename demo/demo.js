@@ -40,7 +40,7 @@ $(document).ready(function() {
     })
     sources_to_load_cnt = ics_sources.length
     ics_sources.forEach(function(ics){
-      load_ics(ics);
-    });
+      load_ics(ics)
+    })
     add_recur_events()
 })

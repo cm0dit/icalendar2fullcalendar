@@ -15,13 +15,13 @@ function moment_icaltime(moment, timezone) {
 function expand_recur_events(start, end, timezone, events_callback) {
     events = []
     recur_events.forEach(function(event, i){
-      event_properties = event.event_properties;
+      event_properties = event.event_properties
       expand_recur_event(event, moment_icaltime(start, timezone), moment_icaltime(end, timezone), function(event){
         fc_event(event, function(event){
           events.push(merge_events(event_properties, merge_events({className:['recur-event']}, event)))
         })
       })
-    });
+    })
     events_callback(events)
 }
 

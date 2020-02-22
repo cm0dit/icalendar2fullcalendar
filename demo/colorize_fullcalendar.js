@@ -15,7 +15,7 @@ function colorize_event(e) {
       if (c.startsWith('event-')) {
           e.style['background'] = e.style['border-color'] = hash_color(c)
       }
-    });
+    })
 }
 
 function colorize_events() {
